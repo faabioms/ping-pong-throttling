@@ -11,7 +11,7 @@ import (
 
 func Router() *gin.Engine {
 	r := gin.Default()
-	//{ "message": "request throttled request", "throttle_age": int }
+
 	lmt := limiter.NewRateLimiter(time.Minute, 10, func(c *gin.Context) (string, error) {
 		key := c.Request.Header.Get("x-secret-key")
 		if key != "" {
