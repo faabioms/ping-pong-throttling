@@ -1,4 +1,4 @@
-# ping-pong-throttling
+# throttling-test
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -42,7 +42,7 @@ curl -X POST \
 ## run locally
 
 ```
-❯ go mod init github.com/faabioms/ping-pong-throttling
+❯ go mod init github.com/fabmorais/throttling-test
 
 ❯ go mod tidy -v
 
